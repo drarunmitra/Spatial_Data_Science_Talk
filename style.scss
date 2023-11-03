@@ -1,0 +1,119 @@
+/*-- scss:defaults --*/
+
+$theme-light: #FFF4E0;
+$theme-yellow: #FFE0A8AA;
+$theme-orange: #D97146;
+$theme-red: #AD5769;
+$theme-grey: #515966;
+$theme-lightgrey: #90A1B8;
+$theme-black: #000000;
+$theme-white: #FFFFFF;
+
+$body-bg: $theme-light;
+$body-color: $theme-grey;
+$link-color: $theme-red;
+
+$code-block-font-size: 1em;
+
+/*-- scss:rules --*/
+
+.orange {
+  color: $theme-orange;
+  font-weight: bold;
+}
+
+.red {
+  color: $theme-red;
+  font-weight: bold;
+}
+
+.reveal pre code {
+  max-height: 1000px;
+}
+
+.reveal div.sourceCode pre code {
+    background-color: $theme-yellow;
+}
+
+.reveal .title {
+  font-size: 3em ;
+  background-color: $theme-light;
+  color: $theme-grey;
+  font-family:impact;
+}
+
+.reveal .footer {
+  color: $theme-grey;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.flow {
+  background-image: url(https://i.ibb.co/yhDLpLy/Spatial-Data-Integration-1200x625-1-1024x533.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+	animation: animate 60s linear infinite;
+	font-weight: 900;
+}
+
+@keyframes animate {
+	0% {
+		background-position: left 0px top 10px;
+	}
+	40% {
+		background-position: left 800px top 10px;
+	}
+}
+
+.flow-2 {
+  background-image: url(https://i.ibb.co/yhDLpLy/Spatial-Data-Integration-1200x625-1-1024x533.jpg);
+  background-attachment: fixed;
+  background-color: #000;
+  text-shadow:  1px 1px 10px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+	animation: animate 60s linear infinite;
+	font-weight: 900;
+}
+
+.subtitle {
+  color: $theme-lightgrey;
+  background-color: $theme-light;
+  font-size: 3em ;
+  font-weight: 500;
+  font-family: $font-family-sans-serif;
+}
+
+
+.subtitle-2 {
+  color: $theme-grey;
+  background-color: $theme-light;
+  font-size: 1.5em ;
+  font-weight: 100;
+  font-family: $font-family-monospace;
+}
+
+
+/* file: style.css */
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.section-color {
+  color: #FFF4E0;
+}
+
+
+.white-text-with-blue-shadow {
+  text-shadow:
+    3px 3px 6px white,
+    0 0 1em #FFE0A8AA,
+    0 0 1em #FFE0A8AA;
+  color: black;
+}

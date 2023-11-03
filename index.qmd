@@ -1,26 +1,241 @@
 ---
-title: "Spatial Data Science"
-author: "Arun Mitra"
-format: revealjs
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    width: 1600
+    height: 900
+    footer: '<a href="https://EmilHvitfeldt.github.io/useR2022-textrecipes/">EmilHvitfeldt.github.io/useR2022-textrecipes/</a>'
 ---
 
-## Quarto
+# 
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+::: columns
+::: {.column width="25%"}
+![](images/ezgif.com-optimize-01.gif)
+:::
 
-## Bullets
+::: {.column width="75%"}
+[[[Spatial Data Science]{.flow}]{.title}]{.r-fit-text}
 
-When you click the **Render** button a document will be generated that includes:
+[for Public Health]{.subtitle}
 
--   Content authored with markdown
--   Output from executable code
+[*Best Practices and Case Studies*]{.subtitle-2}
 
-## Code
+<br> <br>
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+Dr. Arun Mitra Peddireddy\
+SCTIMST, Trivandrum
 
-```{r}
-1 + 1
-```
+<br>
+
+04 Nov 2023
+:::
+:::
 
 
+
+::: footer
+[ ](google.com)
+:::
+
+## Outline
+::: {.v-center-container}
+
+::: columns
+::: {.column width="50%"}
+
+<br> <br> <br>  <br>  <br> 
+
+1.  **Introduction**
+2.  **Foundations of Spatial Data Science**
+3.  **Best Practices in Spatial Data Science**
+4.  **Case Studies from India**
+5.  **Challenges and Future Directions**
+6.  **Q&A Session**
+:::
+
+::: {.column width="50%"}
+![](images/contents.png){width="800"}
+:::
+:::
+
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+
+##  {background-image="images/analog_map2.jpg" background-size="contain" background-position="right" background-opacity=0.5}
+
+
+::: columns 
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+### [Introduction]{.white-text-with-blue-shadow}{.r-fit-text}
+:::
+
+::: {.column width="30%"}
+
+:::
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+## GIS and Public Health
+
+## What is Spatial Data Science?
+
+## How is it different from Data Science?
+
+## How is it different from GIS?
+
+## Why Spatial Data Science for Public Health?
+
+
+
+
+##  {background-image="images/circuitboard3.jpeg" background-size="contain" background-position="right" background-opacity=0.5}
+
+
+::: columns 
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+### [Foundations]{.white-text-with-blue-shadow}{.r-fit-text}
+:::
+
+::: {.column width="30%"}
+
+:::
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+
+## Concepts
+
+Spatial data are fundamental to many geographical analyses and spatial data science draws strongly from key geographical concepts - such as Tobler's classic 1970 law: "everything is related to everything else, but near things are more related than distant things"
+
+Spatial Autocorrelation
+
+- Concepts
+  + GIS related
+  + Data related
+  + Philosophy
+
+- Tools
+  + GIS related
+  + Data Science related
+  + Spatial Data Science related
+  
+- Methods
+  + Epidemiology
+  + Spatial Epidemiology
+  + Machine Learning and AI
+  
+## 
+##  {background-image="images/compass2.jpg" background-size="contain" background-position="right" background-opacity=0.5}
+
+
+::: columns 
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+### [Best Practices]{.white-text-with-blue-shadow}{.r-fit-text}
+:::
+
+::: {.column width="30%"}
+
+:::
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+
+
+##  {background-image="images/india_pendants.png" background-size="contain" background-position="right" background-opacity=0.5}
+
+
+::: columns 
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+### [Case Studies]{.white-text-with-blue-shadow}{.r-fit-text}
+:::
+
+::: {.column width="30%"}
+
+:::
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+
+
+
+
+
+
+
+
+::: columns
+::: {.column width="60%"}
+<br> <br> <br>
+
+::: r-fit-text
+- What is Spatial Data Science
+- How is it different from Data Science?
+- How is it different from GIS?
+- Why is it relevant for Public Health?
+:::
+:::
+
+::: {.column width="45%"}
+![](images/analog_map1.jpg)
+:::
+:::
+
+# Foundations
+
+## Concepts
+
+Spatial data are fundamental to many geographical analyses and spatial data science draws strongly from key geographical concepts - such as Tobler's classic 1970 law: "everything is related to everything else, but near things are more related than distant things"
+
+
+
+
+
+##  {background-image="https://images.unsplash.com/photo-1550399105-05c4a7641b02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" background-size="contain" background-position="right"}
+
+::: columns
+::: {.column width="40%"}
+::: r-fit-text
+Thank you!
+
+-   [textrecipes](https://textrecipes.tidymodels.org)
+
+-   [smltar.com](https://smltar.com/)
+
+-   [emilhvitfeldt.com/](https://www.emilhvitfeldt.com/)
+
+-   [\@Emil_Hvitfeldt](https://twitter.com/Emil_Hvitfeldt)
+:::
+:::
+
+::: {.column width="60%"}
+:::
+:::
+
+::: footer
+Photo by <a href="https://unsplash.com/@eddrobertson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ed Robertson</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+:::
