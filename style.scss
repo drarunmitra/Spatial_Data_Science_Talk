@@ -51,7 +51,7 @@ $code-block-font-size: 1em;
 }
 
 .flow {
-  background-image: url(https://i.ibb.co/yhDLpLy/Spatial-Data-Integration-1200x625-1-1024x533.jpg);
+  background-image: url(https://i.ibb.co/FD2rWDN/flow.png);
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -67,6 +67,7 @@ $code-block-font-size: 1em;
 		background-position: left 800px top 10px;
 	}
 }
+
 
 .flow-2 {
   background-image: url(https://i.ibb.co/yhDLpLy/Spatial-Data-Integration-1200x625-1-1024x533.jpg);
@@ -116,4 +117,13 @@ $code-block-font-size: 1em;
     0 0 1em #FFE0A8AA,
     0 0 1em #FFE0A8AA;
   color: black;
+}
+
+
+.wrapper{
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  flex-flow: row nowrap;
+  letter-spacing: 5px;
 }

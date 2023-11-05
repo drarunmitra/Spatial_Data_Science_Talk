@@ -4,7 +4,7 @@ format:
     theme: [default, style.scss]
     width: 1600
     height: 900
-    footer: '<a href="https://EmilHvitfeldt.github.io/useR2022-textrecipes/">EmilHvitfeldt.github.io/useR2022-textrecipes/</a>'
+    footer: '<a href="https://drarunmitra.github.io/Spatial_Data_Science_Talk">drarunmitra.github.io/Spatial_Data_Science_Talk</a>'
 ---
 
 # 
@@ -15,7 +15,7 @@ format:
 :::
 
 ::: {.column width="75%"}
-[[[Spatial Data Science]{.flow}]{.title}]{.r-fit-text}
+[Spatial Data Science]{.flow .title}
 
 [for Public Health]{.subtitle}
 
@@ -27,24 +27,21 @@ Dr. Arun Mitra Peddireddy\
 SCTIMST, Trivandrum
 
 <br>
-
-04 Nov 2023
 :::
 :::
 
-
+[Spatial Epidemiology Series     \|     Webinar No. 3     \|     04 Nov 2023]{.wrapper}
 
 ::: footer
-[ ](google.com)
+[drarunmitra.github.io/Spatial_Data_Science_Talk](drarunmitra.github.io/Spatial_Data_Science_Talk)
 :::
 
 ## Outline
-::: {.v-center-container}
 
+::: v-center-container
 ::: columns
 ::: {.column width="50%"}
-
-<br> <br> <br>  <br>  <br> 
+<br> <br> <br> <br> <br>
 
 1.  **Introduction**
 2.  **Foundations of Spatial Data Science**
@@ -58,26 +55,22 @@ SCTIMST, Trivandrum
 ![](images/contents.png){width="800"}
 :::
 :::
-
 :::
 
 ::: footer
 [ ](google.com)
 :::
 
+##  {background-image="images/analog_map2.jpg" background-size="contain" background-position="right" background-opacity="0.5"}
 
-##  {background-image="images/analog_map2.jpg" background-size="contain" background-position="right" background-opacity=0.5}
-
-
-::: columns 
+::: columns
 ::: {.column width="70%"}
-<br> <br> <br> <br> <br> <br> <br> <br> <br> 
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
 
-### [Introduction]{.white-text-with-blue-shadow}{.r-fit-text}
+### [Introduction]{.white-text-with-blue-shadow} {.r-fit-text}
 :::
 
 ::: {.column width="30%"}
-
 :::
 :::
 
@@ -87,29 +80,182 @@ SCTIMST, Trivandrum
 
 ## GIS and Public Health
 
+::: columns
+::: {.column width="40%"}
+-   Extremely useful in providing a fresh outlook to public health.
+
+-   Provides opportunity to enable overlaying data with its spatial representation
+
+-   Supports better planning and decision-making.
+
+-   The convergence of many new sub-disciplines:
+
+    -   medical geography
+    -   public health informatics
+    -   data science
+:::
+
+::: {.column width="60%"}
+![](images/history_gis_plague_naples.jpg)
+
+::: {style="font-size: 70%;"}
+Map of the plague in the province of Bari, Naples, 1690-1692\
+
+The map shows areas most affected and the boundaries of a military quarantine imposed to prevent its spread to neighboring towns and to other provinces.
+:::
+:::
+:::
+
+::: footer
+Koch T. Mapping the miasma: air, health, and place in early medical mapping. Cartographic Perspectives. 2005 Sep 1(52):4-27.
+:::
+
+## Applications of GIS in Public Health
+
+::: columns
+::: {.column width="50%"}
+-   disease surveillance
+-   environmental health
+-   infectious diseases
+    -   mathematical modelling
+    -   agent based modelling
+-   population genetics
+-   medical imagining
+-   cancer biology
+:::
+
+::: {.column width="50%"}
+::: r-stack
+![](images/soho-cholera-map.png){width="600"}
+
+![](images/rayshader2_john_snow.gif){.fragment width="600"}
+:::
+:::
+:::
+
+While traditional uses of GIS in healthcare still are relevant, newer methods and advancing technology would be monumental for public health research.
+
+
 ## What is Spatial Data Science?
 
-## How is it different from Data Science?
+::: columns
 
-## How is it different from GIS?
-
-## Why Spatial Data Science for Public Health?
-
-
-
-
-##  {background-image="images/circuitboard3.jpeg" background-size="contain" background-position="right" background-opacity=0.5}
-
-
-::: columns 
 ::: {.column width="70%"}
-<br> <br> <br> <br> <br> <br> <br> <br> <br> 
 
-### [Foundations]{.white-text-with-blue-shadow}{.r-fit-text}
+
+::: {.callout-note }
+
+## Definition
+
+<br>
+
+### Spatial data science (SDS) is a subset of Data Science that focuses on the unique characteristics of spatial data,  <span style="color:red;">moving beyond</span>  simply looking at <span style="color:red;">where</span> things happen <span style="color:red;">to understand why</span> they happen there.
+
+> CARTO  - [https://carto.com/what-is-spatial-data-science](https://carto.com/what-is-spatial-data-science)
+:::
+
+
 :::
 
 ::: {.column width="30%"}
+![](images/what-is-sds.png)
+:::
 
+:::
+
+
+Like data science, spatial data science seems to be a field that <span style="color:red;">arises bottom-up</span> in and <span style="color:red;">from many existing scientific disciplines</span> and industrial activities <span style="color:red;">concerned with application of spatial data</span>, rather than being a sub-discipline of an existing scientific discipline. 
+
+> Edzer Pebesma, Roger Bivand   - Spatial Data Science
+With Applications in R 
+
+::: footer
+
+[https://r-spatial.org/book/](https://r-spatial.org/book/)
+
+:::
+
+
+
+
+## How is it different from Data Science? {auto-animate=true} 
+
+![](images/ds_venn.png){width="1200" fig-align="center"}
+
+
+## How is it different from Data Science? {auto-animate=true} 
+
+![](images/ds_venn.png){.absolute left=50 width="500"}
+![](images/ds_knowledge_stack.png){.absolute right=50 width="900"}
+
+## How is it different from Data Science? {auto-animate=true} 
+
+![](images/ds_venn.png){.absolute top=100 left=100 width="400"}
+![](images/ds_knowledge_stack.png){.absolute bottom=30 left=100 width="400"}
+
+![](images/sds_venn.png){.absolute top=50 right=100 width="900"}
+
+
+
+
+## Why Spatial Data Science for Public Health? {auto-animate=true} 
+
+![](images/epid_triad.png){width="1200" fig-align="center"}
+
+
+## Why Spatial Data Science for Public Health? {auto-animate=true} 
+
+![](images/epid_triad.png){.absolute left=50 width="300"}
+![](images/spatial_epi_triad1.png){.absolute right=50 width="1200"}
+
+
+## Why Spatial Data Science for Public Health? {auto-animate=true} 
+
+![](images/epid_triad.png){.absolute top=100 left=100 width="300"}
+![](images/spatial_epi_triad1.png){.absolute bottom=30 left=100 width="500"}
+
+![](images/julia_agents_1.gif){.absolute top=50 right=100 width="800"}
+
+## Why Spatial Data Science for Public Health? {auto-animate=true} 
+
+![](images/epid_triad.png){.absolute top=100 left=100 width="300"}
+![](images/spatial_epi_triad1.png){.absolute top=330 left=100 width="300"}
+
+![](images/julia_agents_1.gif){.absolute bottom=10 left=100 width="300"}
+
+::: columns
+
+::: {.column width="30%"}
+
+:::
+
+::: {.column width="70%"}
+
+<br> <br>
+
+- Wealth of Spatial Data
+
+- 70% of all data that is generated data has spatial attributes
+
+- Routine health data can be geo-referenced
+
+- Provide a gateway for researchers and practitioners to examine the role and harness the power of SDS in public health
+
+- Coupled with the emerging field of spatial statistics, the analysis of this location-based data is developing new and novel directions for public health.
+::: 
+::: 
+
+
+##  {background-image="images/circuitboard3.jpeg" background-size="contain" background-position="right" background-opacity="0.5"}
+
+::: columns
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+### [Foundational Concepts]{.white-text-with-blue-shadow} {.r-fit-text}
+:::
+
+::: {.column width="30%"}
 :::
 :::
 
@@ -117,125 +263,861 @@ SCTIMST, Trivandrum
 [ ](google.com)
 :::
 
+## Core Concepts related to GIS
 
-## Concepts
+Spatial data are fundamental to many geographical analyses and spatial data science draws strongly from key geographical concepts
 
-Spatial data are fundamental to many geographical analyses and spatial data science draws strongly from key geographical concepts - such as Tobler's classic 1970 law: "everything is related to everything else, but near things are more related than distant things"
+<br>
 
-Spatial Autocorrelation
+### First Law of Geography
 
-- Concepts
-  + GIS related
-  + Data related
-  + Philosophy
-
-- Tools
-  + GIS related
-  + Data Science related
-  + Spatial Data Science related
-  
-- Methods
-  + Epidemiology
-  + Spatial Epidemiology
-  + Machine Learning and AI
-  
-## 
-##  {background-image="images/compass2.jpg" background-size="contain" background-position="right" background-opacity=0.5}
-
-
-::: columns 
+::: columns
 ::: {.column width="70%"}
-<br> <br> <br> <br> <br> <br> <br> <br> <br> 
 
-### [Best Practices]{.white-text-with-blue-shadow}{.r-fit-text}
-:::
+::: {.callout-note }
 
-::: {.column width="30%"}
+## Tobler's First Law 
 
-:::
-:::
+*"Everything is related to everything else, but near things are more related than distant things"*
 
-::: footer
-[ ](google.com)
-:::
-
-
-
-##  {background-image="images/india_pendants.png" background-size="contain" background-position="right" background-opacity=0.5}
-
-
-::: columns 
-::: {.column width="70%"}
-<br> <br> <br> <br> <br> <br> <br> <br> <br> 
-
-### [Case Studies]{.white-text-with-blue-shadow}{.r-fit-text}
-:::
-
-::: {.column width="30%"}
+> Waldo Tobler, 1970
 
 :::
-:::
 
-::: footer
-[ ](google.com)
-:::
+::: 
+::: {.column width="25%"}
+![](images/waldo_tobler.jpg)
+::: 
+::: 
 
+## Spatial Dependence and Complete Spatial Randomness
+<br>
 
-
-
-
-
-
-
+Spatial dependence is *"the propensity for nearby locations to influence each other and to possess similar attributes"*.
 
 ::: columns
 ::: {.column width="60%"}
-<br> <br> <br>
+![](images/point_patterns.png){width="900"}
+::: 
 
-::: r-fit-text
-- What is Spatial Data Science
-- How is it different from Data Science?
-- How is it different from GIS?
-- Why is it relevant for Public Health?
+
+::: {.column width="40%"}
+
+This means natural phenomenon are not spatially distributed at random.
+
+- temparature, 
+- rainfall, 
+- population density, 
+- socio-economic conditions etc.
+
+
+
+::: 
+
 :::
+
+
+It can be measured by the indices of Spatial Autocorrelation.
+
+
+## Spatial Autocorrelation
+
+
+Refers to the presence of systematic spatial variation in a mapped variable.
+
+The terms **spatial association** and **spatial dependence** are often used to reflect spatial auto-
+correlation as well.
+
+![](images/spatial_autocorrelation1.png)
+
+ 
+## Indices to measure Spatial Dependence 
+
+::: columns
+::: {.column width="50%"}
+
+- Covariance Functions and Variograms
+
+- Global Spatial Autocorrelation Measures
+  - Moran’s *I* index
+  - General *G*-Statistic
+  - Geary’s *C* index
+
+- Local Indicators of Spatial Association (LISA)
+  - Local Moran’s *I* index
+  - Getis-Ord *G*~*i*~ and *G*~*i*~^∗^ statistics
+  
+- Space-Time Correlation Analysis
+  - Bivariate Moran's *I* for STC
+  - Differential Moran's *I*
+  - Emerging Hot Spot Analysis (EHSA)
+
+
+:::
+
+::: {.column width="50%"}
+
+::: fragment
+![](images/global_moran_spatial_autocorrelation.png)
+:::
+
+
+::: fragment
+![](images/morans_scatterplot.png)
+:::
+
+:::
+:::
+
+## Core Concepts related to GIS
+
+
+### Map Projections & coordinate reference system (CRS)
+
+::: columns
+::: {.column width="40%"}
+
+- Map projections try to transform the earth from its spherical shape (3D) to a planar shape (2D).
+
+- A CRS then defines how the two-dimensional, projected map in your GIS relates to real places on the earth. 
+
+- The decision of which depends on the extent of the area, analysis type, and often on the availability of data.
+
+:::
+
+::: {.column width="60%"}
+
+![a) cylindrical projections, b) conical projections or c) planar projections.](images/projection_families.png){width="800"}
+
+
+:::
+:::
+
+::: footer
+[https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/coordinate_reference_systems.html](https://docs.qgis.org/3.28/en/docs/gentle_gis_introduction/coordinate_reference_systems.html)
+:::
+
+
+## Why is the CRS Important?
+
+::: columns
+::: {.column width="50%"}
+
+
+![](images/geoid_spheroid.png)
+
+::: 
+
+::: {.column width="50%"}
+
+
+::: r-stack
+
+::: {.fragment  .fade-in-then-out}
+![The Mercator projection, for example, is used where angular relationships are important, but the relationship of areas are distorted.](images/mercator_projection.png)
+:::
+
+
+::: {.fragment .fade-in-then-out}
+![The Mollweide Equal Area Cylindrical projection, for example, ensures that all mapped areas have the same proportional relationship to the areas on the Earth.](images/mollweide_equal_area_projection.png)
+:::
+
+::: {.fragment .fade-in-then-out}
+![The Plate Carree Equidistant Cylindrical projection, for example, is used when accurate distance measurement is important.](images/plate_carree_projection.png)
+:::
+
+::: {.fragment .fade-in-then-out}
+![The Robinson projection is a compromise where distortions of area, angular conformity and distance are acceptable.](images/robinson_projection.png)
+:::
+
+::: {.fragment .fade-in-then-out}
+
+![The United Nations Logo uses the Azimuthal Equidistant projection](images/azimuthal_equidistant_projection.png)
+:::
+
+::: {.fragment .fade-in-then-out}
+
+![What four commonly used projections do, as shown on the human head](images/projections_human_head.png)
+:::
+
+:::
+
+:::
+:::
+
+## CRS in Action
+
+<iframe sandbox="allow-scripts allow-same-origin" src="https://www.thetruesize.com" width="1500" height="750"></iframe>
+
+::: footer
+[https://www.thetruesize.com](https://www.thetruesize.com)
+:::
+
+
+## Data Science Approach as a methodological approach
+
+::: {.callout-note }
+
+
+> The key word in <span style="color:red;"> data science</span> is not <span style="color:red;">data</span>, it is <span style="color:red; font-size:160%;">science</span>.
+
+ -- Jeff Leek, JHU Data Science Lab 
+
+:::
+
+
+
+### Reproducible Research
+
+::: columns
+::: {.column width="30%"}
+
+::: 
+::: {.column width="70%"}
+
+![](images/RR_Spectrum.png){width="900"}
+:::
+::: 
+
+
+
+
+## Reproducible Research
+
+::: columns
+::: {.column width="40%"}
+
+<br>
+
+There are four key elements of reproducible research:
+
+- data documentation
+- data publication
+- code publication,
+- output publication.
+
+::: 
+::: {.column width="60%"}
+
+![](images/reproducible_research_cycle.png)
+
+::: 
+:::
+
+
+## Tools for Spatial Data Science
+
+::: columns
+
+
+::: {.column width="40%"}
+
+- GIS related
+- Data Science related
+- Spatial Data Science related
+
+> R is the best spatial data science tool available for public health !!!
+
+<br>
+R provides a range of powerful packages for geospatial analysis, enabling advanced computations and analytics. 
+
+
+
+
+::: 
+::: {.column width="60%"}
+
+![](images/sds_tools1.png)
+:::
+:::
+
+## R Spatial Analysis Ecosystem
+
+:::  columns
+::: {.column width="25%"}
+
+![](images/sf_hex2.gif)
+
+<br>
+
+[CRAN Task View -  Spatial Analysis](https://cran.r-project.org/web/views/Spatial.html)
+:::  
+::: {.column width="75%"}
+<iframe sandbox="allow-scripts allow-same-origin" src="https://cran.r-project.org/web/views/Spatial.html" width="1500" height="750"></iframe>
+:::  
+:::
+
+::: footer
+
+[https://cran.r-project.org/web/views/Spatial.html](https://cran.r-project.org/web/views/Spatial.html)
+:::
+
+## R Spatial Learning Resources
+
+:::  columns
+::: {.column width="65%"}
+- Wealth of Resource material
+
+- Powerful tools/packages
+
+- seamlessly handle vector and raster data
+
+- inractive visualization
+
+- end-to-end solution
+
+
+<br>
+![](images/R_books.png)
+
+Newest addition: [Spatial Data Science: With Applications in R](https://r-spatial.org/book/)
+::: 
+::: {.column width="35%"}
+![](images/SDS_book.jpg){width="500"}
+
+::: 
+::: 
+
+
+## The `sf` package 
+
+::: columns
+::: {.column width="45%"}
+
+![](images/sf_hex.gif)
+
+``` r
+install.packages("sf")
+```
+
+The **sf** package is an R implementation of [Simple Features](https://en.wikipedia.org/wiki/Simple_Features).
+
+This package incorporates:
+
+-   a new spatial data class system in R
+
+-   functions for reading and writing data
+
+-   tools for spatial operations on vectors
+
+
+
+
+
+
+:::
+
+::: {.column width="55%"}
+
+![](images/sf_2.png)
+:::
+:::
+
+
+
+## Geometry Types in `sf`
+
+::: columns
+::: {.column width="50%"}
+![](images/wkt_primitives.png)
+
+![](images/wkt_multipart.png)
+:::
+
+::: {.column width="50%"}
+![](images/sf-classes.png){width="800"}
+:::
+:::
+
+
+## Loading  `sf` package
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(here)
+```
+
+
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+
+
+library(sf)
+
+fs::dir_tree(here("spatial_files", "kl_pop_centers"))
+
+```
+
+# Load spatial data into R 
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+
+shape_file <- here("spatial_files", "kl_pop_centers", "kl_pop_centers.shp")
+
+kl_pop_centers <- st_read(shape_file)
+
+
+```
+
+
+
+
+## View the `sf` object
+
+```{r}
+#| echo: true
+
+kl_pop_centers
+```
+
+## Plot the `sf` object
+
+
+::: columns
+::: {.column width="50%"}
+
+
+```r
+kl_pop_centers %>% 
+  ggplot() +
+  geom_sf()
+
+```
+
+:::
+
+::: {.column width="50%"}
+![](images/kl_map.png){width="500"}
+
+:::
+:::
+
+
+## Plot the `sf` object
+
+
+::: columns
+::: {.column width="55%"}
+
+
+```r
+kl_pop_centers %>% 
+  ggplot() +
+  geom_sf(aes(color = district))
+
+```
+
 :::
 
 ::: {.column width="45%"}
-![](images/analog_map1.jpg)
+![](images/kl_district_map.png)
+
 :::
 :::
 
-# Foundations
 
-## Concepts
+## Concept of the `sf` package
 
-Spatial data are fundamental to many geographical analyses and spatial data science draws strongly from key geographical concepts - such as Tobler's classic 1970 law: "everything is related to everything else, but near things are more related than distant things"
+![](images/sf_concept_map.png)
+
+## Dependencies of the `sf` package
+
+![](images/sf_deps.png)
+
+## Methods in `sf`
+
+```{r}
+#| echo: true
+
+methods(class="sf")
+```
+
+
+## Interactive `sf`
+
+::: columns
+::: {.column width="70%"}
+
+```{r out.width="100%", out.height="800"}
+kl_pop_centers %>%
+  mapview::mapview()
+```
+
+::: 
+::: {.column width="30%"}
+
+![](images/leaflet.png)
+
+
+- Light weight
+- Interactive
+- Cross Platform
+:::
+::: 
+## Where to look for help?
+
+::: columns
+::: {.column width="60%"}
+![](images/sf_cheatsheet.png)
+:::
+
+::: {.column width="40%"}
+![](images/sf_cheatsheet2.png)
+:::
+
+https://posit.co/wp-content/uploads/2022/10/sf.pdf
+:::
+
+
+##  {background-image="images/compass2.jpg" background-size="contain" background-position="right" background-opacity="0.5"}
+
+::: columns
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+### [Best Practices]{.white-text-with-blue-shadow} {.r-fit-text}
+:::
+
+::: {.column width="30%"}
+:::
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+## Best Practices 
+
+- Data Related
+  - Data Acquisition
+  - Data Cleaning
+  - Data Curation
+
+- Analysis Related
 
 
 
+
+
+## Exploratory Data Analysis
+
+
+::: columns
+::: {.column  width="70%"}
+- **EDA** is the critical first step.
+
+- **EDA** is a state of mind. 
+
+- **EDA** is exploring your ideas.
+
+- **EDA** has no strict rules.
+
+- **EDA** helps understand your data.
+
+- **EDA** is an iterative cycle.
+
+- **EDA** is a creative process.
+
+
+:::
+
+::: {.column  width="30%"}
+
+![](images/EDA.png)
+:::
+
+::: 
+
+
+## What is EDA?
+
+It  is  mostly  a  **philosophy**  of  data analysis where the researcher examines the data without any pre-conceived ideas  in  order  to  discover what  the  data  can  tell  him  or  her  about the phenomena  being  studied.  
+
+> detective work – numerical detective work – or counting detective work – or graphical detective  work"
+
+-- Tukey,  1977** *Page 1, Exploratory Data Analysis*
+
+
+
+## Questions to ask in EDA
+
+The easiest way to do **EDA** is to use questions as tools to guide your investigation. **EDA** is an important part of any data analysis, even if the questions are known already.
+
+
+>"There are no routine statistical questions, only questionable statistical routines."
+
+-- **Sir David Cox**
+
+
+> "Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise."
+
+-- **John Tukey**
+
+
+
+## Asking the right questions
+
+Key to asking **_quality_** questions is to generate a large **_quantity_** of questions.
+
+It is difficult to ask revealing questions at the start of the analysis.
+
+But, each new question will expose a new aspect and increase your chance of making a discovery.
+
+<br>
+
+### 6 W's of Spatial EDA / ESDA
+
+::: columns
+::: {.column  width="30%"}
+
+-   What?
+
+-   Where?
+
+-   When?
+
+-   Who?
+
+-   Why?
+
+-   How?
+
+::: 
+::: {.column  width="70%"}
+### Questions to ask:
+
+- What type of variation occurs within your variables?
+
+- What type of covariation occurs between your variables?
+
+- Whether your data meets your expectations or not. 
+
+- Whether the quality of your data is robust or not.
+::: 
+:::
+
+
+
+## The process of EDA
+
+::: columns
+::: {.column  width="60%"}
+
+<br>
+
+![](images/data_exploration1.png)
+
+**It is an iterative process**
+::: 
+::: {.column  width="40%"}
+
+
+1. Import
+2. Tidy
+3. Explore
+  - Transform
+  - Visualize
+  - Transform
+  - Visualize
+  - Transform 
+  - Visualise ...
+  - ... 
+  
+
+
+::: 
+:::
+
+
+## Steps for any good data anlysis project
+
+
+::: columns
+::: {.column  width="40%"}
+
+### Preparing Tidy Data
+- Data Cleaning
+- Data Wrangling
+
+### Data Exploration
+- Data Transformation
+- Data Visualization
+
+### Statistical Analysis
+### Prepare Results
+
+### Draw Inferences 
+### Report Findings
+
+
+::: 
+::: {.column  width="60%"}
+![](images/steps_SDA.jpg)
+::: 
+::: 
+
+## Spatial Data Visualization
+### Cartographic Principles
+
+::: columns
+::: {.column width="70%"}
+-   Geography and Geospatial Science Working Group (GeoSWG) recognised the need for best practices in cartography.
+
+    -   Visual contrast
+    -   Legibility
+    -   Figure-Ground Orientation
+    -   Hierarchical Organization
+    -   Balance
+
+<br> These guidelines, help the researchers develop high-quality, consistent map products.
+:::
+
+::: {.column width="30%"}
+::: r-stack
+![](images/designprinciples_2-lg.jpg){.fragment width="400"}
+
+![](images/designprinciples_3.jpg){.fragment width="400"}
+
+![](images/designprinciples_4.jpg){.fragment width="400"}
+
+![](images/designprinciples_5.jpg){.fragment width="360"}
+
+![](images/designprinciples_6.jpg){.fragment width="400"}
+:::
+:::
+:::
+
+## Cartographic Guidelines for Public Health
+
+::: columns
+::: {.column width="40%"}
+-   CDC, Atlanta
+-   Some important aspects:
+    -   Map Elements
+        -   Title and Borders
+        -   North Arrow / Graticule / Scale
+        -   Inset Maps
+        -   Labels and Legend
+    -   Other Elements
+        -   Data Sources
+        -   Dates
+        -   Projection
+:::
+
+::: {.column width="60%"}
+![](images/map_elements_1.jpg){width="900"}
+
+<https://www.cdc.gov/dhdsp/maps/gisx/resources/cartographic_guidelines.pdf>
+:::
+:::
+
+
+
+##  {background-image="images/case_studies1.png" background-size="contain" background-position="right" background-opacity="0.5"}
+
+::: columns
+::: {.column width="70%"}
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+### [Case Studies]{.white-text-with-blue-shadow} {.r-fit-text}
+:::
+
+::: {.column width="30%"}
+:::
+:::
+
+::: footer
+[ ](google.com)
+:::
+
+## Case Studies
+
+-   Point Pattern Data
+
+-   Areal Data
+
+-   Raster Data
+
+-   Network Data
+
+-   Spatio-temporal Models
+
+-   Machine Learning Methods
+
+-   Big Data
+
+
+
+## Challenges and Future Directions
+
+### New Requirements for Spatial Analysis
+
+- Immediate: The time from action to insight is reducing dramatically
+
+
+- Fresh: Primary data needs to be days or months old  not years old
+
+
+- Multi-source: Competitive alternative sources for completeness or validation
+
+
+- Continuous: Analysis can no longer be a point in time
+
+
+- Automated: Possibility to continuously replicate and connect to decision tools
+
+## Digital Twins
+
+::: columns
+
+::: {.column width="50%"}
+
+![](images/digital-twin-2.jpg)
+
+:::
+
+::: {.column width="50%"}
+
+
+![](images/future_directions.png)
+
+
+:::
+
+:::
+:::
 
 
 ##  {background-image="https://images.unsplash.com/photo-1550399105-05c4a7641b02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" background-size="contain" background-position="right"}
 
 ::: columns
-::: {.column width="40%"}
+::: {.column width="50%"}
 ::: r-fit-text
 Thank you!
-
--   [textrecipes](https://textrecipes.tidymodels.org)
-
--   [smltar.com](https://smltar.com/)
-
--   [emilhvitfeldt.com/](https://www.emilhvitfeldt.com/)
-
--   [\@Emil_Hvitfeldt](https://twitter.com/Emil_Hvitfeldt)
-:::
 :::
 
-::: {.column width="60%"}
+
+
+-   [Slides - https://drarunmitra.github.io/Spatial_Data_Science_Talk](https://drarunmitra.github.io/Spatial_Data_Science_Talk)
+<br>
+-   [National Workshop on Health Data Analytics - https://nwhda.github.io/aiims_kalyani/](https://nwhda.github.io/aiims_kalyani/)
+<br>
+-   [Public Health Data-Science Mentorship Initiative (PHDMI) - https://phdmi-sctimst.github.io/website/](https://phdmi-sctimst.github.io/website/)
+<br>
+-   [LinkedIn](https://www.linkedin.com/in/dr-arunmitra/)
+
+:::
+
+::: {.column width="50%"}
 :::
 :::
 
 ::: footer
-Photo by <a href="https://unsplash.com/@eddrobertson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ed Robertson</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
 :::
