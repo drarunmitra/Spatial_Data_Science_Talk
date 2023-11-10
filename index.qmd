@@ -7,7 +7,7 @@ format:
     footer: '<a href="https://drarunmitra.github.io/Spatial_Data_Science_Talk">drarunmitra.github.io/Spatial_Data_Science_Talk</a>'
 ---
 
-# 
+#
 
 ::: columns
 ::: {.column width="25%"}
@@ -958,7 +958,7 @@ But, each new question will expose a new aspect and increase your chance of maki
 
 ::: 
 ::: {.column  width="60%"}
-![](images/steps_SDA.jpg)
+![](images/steps_SDA.png)
 ::: 
 ::: 
 
@@ -980,7 +980,7 @@ But, each new question will expose a new aspect and increase your chance of maki
 
 ::: {.column width="30%"}
 ::: r-stack
-![](images/designprinciples_2-lg.jpg){.fragment width="400"}
+![](images/designprinciples_2-lg.png){.fragment width="400"}
 
 ![](images/designprinciples_3.jpg){.fragment width="400"}
 
